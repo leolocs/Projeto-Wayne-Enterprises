@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64 Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21000 29700"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:black}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <rect x="27039.77" y="10458.13" width="1693.34" height="1693.34"/>
+   </clipPath>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g style="clip-path:url(#id0)">
+   <image x="27039.77" y="10458.13" width="1693.34" height="1693.34" xlink:href="batman_Images\batman_ImgID1.png"/>
+  </g>
+  <path class="fil0" d="M10708.85 15663.01l-62.12 -40.08 0 165.03c-47.17,-11.24 -82.54,-25.26 -124.63,-47.36 -38.85,-20.4 -64.39,-45.16 -97.59,-71.08 -58.72,-45.84 -75.02,-124.64 -124.79,-132.91 -42.73,-7.09 -158.58,85.35 -249.09,186.04 -113.81,126.63 -147.94,216.1 -144.76,216.73 106.52,21.18 240.52,54.94 330.57,111.79 126.04,79.59 158.61,201.92 195.45,202.34 136.18,1.56 245.68,37.15 307.05,119.16l3.75 5.15 3.74 -5.15c61.37,-82.01 170.87,-117.6 307.05,-119.16 36.84,-0.42 69.41,-122.75 195.45,-202.34 90.05,-56.85 224.05,-90.61 330.57,-111.79 3.18,-0.63 -30.95,-90.1 -144.76,-216.73 -90.51,-100.69 -206.36,-193.13 -249.09,-186.04 -49.77,8.27 -66.07,87.07 -124.79,132.91 -33.2,25.92 -58.74,50.68 -97.59,71.08 -42.09,22.1 -77.46,36.12 -124.63,47.36l0 -165.03 -62.12 40.08 -67.67 0z"/>
+ </g>
+</svg>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+    <title>Painel do Administrador</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./admin_style.css">
+</head>
+<body>
+    <header class="admin_header">
+        <h1>Bem-vindo, Administrador</h1>
+        <button class="sair" id="sair" onclick="logout()">Sair</button>
+    </header>
+    <main class="admin_main">
+        <div class="admin_container">
+            <nav class="admin_nav_menu">
+                <ul class="admin_menu_list">
+                    <li class="menu_item_list"><img src="./src/icons/address-card-solid.svg" width="100px"><a href="" id="userManager">Gerenciar Usuários<br>(Incompleto)</a></li>
+                    <li class="menu_item_list"><img src="./src/icons/mountain-sun-solid.svg" width="100px"><a href="" id="batcaverna">Batcaverna</a></li> <!-- Equipamentos e veiculos -->
+                    <li class="menu_item_list"><img src="./src/icons/book-solid.svg"  width="80px"><a href="" id="biblioteca_wayne">Biblioteca Wayne</a></li> <!-- Personagens, locais, infos -->
+                    <li><img src="./src/icons/car-solid.svg" alt=""></li>
+                </ul>
+            </nav>
+        </div>
+            <section class="painel_container">
+                <div id="col1" class="col1"></div>
+                <div id="col2" class="col2"></div>
+            </section>
+    </main>
+    <footer>
+    </footer>
+
+    <script>
+        // Verifica se o usuário tem permissão de administrador
+        const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+        if (!usuarioLogado || usuarioLogado.role !== "admin") {
+            alert("Acesso negado!");
+            window.location.href = "index.html";
+        }
+
+        function logout(){
+            localStorage.removeItem("usuarioLogado");
+            window.location.href = "index.html"
+        }
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>

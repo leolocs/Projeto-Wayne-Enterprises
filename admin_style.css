@@ -1,0 +1,197 @@
+/* body{
+    font-family: "squada one", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15pt;
+} */
+
+.admin_header{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    color: white;
+    background-color: rgb(34, 34, 34);
+    border: 1px solid yellow;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.admin_container{
+    display:block;
+    justify-content: center;
+    padding: 30px;
+}
+
+.admin_nav_menu{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.admin_menu_list{
+    display: flex;
+    justify-content:space-between;
+    align-items: baseline;
+    gap: 40px;
+}
+
+.menu_item_list{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.userManagerPainel{
+    display:block;
+    justify-content: center;
+    padding: 30px;
+
+    color: white;
+    background-color: rgb(34, 34, 34);
+    border: 1px solid yellow;
+    border-radius: 10px;
+}
+
+.painel_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 200px;
+    padding: 20px;
+    gap: 20px;
+
+    background-color: rgb(65, 65, 65);
+    border: 1px solid yellow;
+    border-radius: 10px;
+}
+
+
+.col1{
+    flex: 1;
+    display: flex;
+    min-width: 200px;
+    border-right: 1px solid yellow;
+}
+
+.col2{
+    flex: 1;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 10px;
+}
+
+.card {
+    width: 200px; /* Largura fixa dos cards */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #464646;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: yellow
+}
+.card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+}
+
+/* ########## Estilização da Tabela de usuários ##########*/
+
+/* Estilos gerais para a tabela */
+#userTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Cabeçalho da tabela */
+#userTable thead {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+#userTable thead th {
+    padding: 12px 15px;
+    text-transform: uppercase;
+}
+
+/* Corpo da tabela */
+#userTable tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#userTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#userTable tbody tr:hover {
+    background-color: #d1e7dd; /* Destaque ao passar o mouse */
+    cursor: pointer;
+}
+
+#userTable tbody td {
+    padding: 10px 15px;
+}
+
+#userTable tr:last-child {
+    border-bottom: none;
+}
+
+#userTable tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 5px;
+}
+
+#userTable tbody tr:last-child td:last-child {
+    border-radius: 0 0 5px 0;
+}
+
+/* Responsividade para mobile*/
+@media screen and (max-width: 600px) {
+    #userTable {
+        font-size: 14px;
+    }
+
+    #userTable thead {
+        display: none;
+    }
+
+    #userTable tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #userTable td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    #userTable td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+}

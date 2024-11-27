@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Funcionário</title>
+</head>
+<body>
+    <h1>Bem-vindo, Funcionário</h1>
+    <button onclick="logout()">Sair</button>
+
+    <script>
+        // Verifica se o usuário tem permissão de funcionário
+        const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+        if (!usuarioLogado || usuarioLogado.role !== "funcionario") {
+            alert("Acesso negado!");
+            window.location.href = "index.html";
+        }
+
+        function logout() {
+            localStorage.removeItem("usuarioLogado");
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
